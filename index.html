@@ -108,7 +108,7 @@
 <main>
   <h1 class="doc-title">プライバシーポリシー</h1>
   <div class="doc-title-en">Privacy Policy</div>
-  <div class="doc-meta">最終更新日 / Last updated: 2026年6月8日</div>
+  <div class="doc-meta">最終更新日 / Last updated: 2026年6月19日</div>
 
   <p>本プライバシーポリシーは、スマートフォン向けアプリ「Snaptidify」（以下「本アプリ」）における
   ユーザー情報の取り扱いについて説明するものです。本アプリをご利用になる前に、必ずお読みください。</p>
@@ -118,23 +118,27 @@
   <div class="section">
     <h2>1. 収集する情報 / Information We Collect</h2>
 
-    <h3>【デバイス上の写真・メディアデータ】Photo &amp; Media Data on Device</h3>
-    <p>本アプリは、写真の表示・整理（フォルダへの移動・削除）を実現するために以下のシステム権限を要求します。
+    <h3>【デバイス上の写真・動画データ】Photo &amp; Video Data on Device</h3>
+    <p>本アプリは、写真および動画の表示・整理（フォルダへの移動・削除）を実現するために以下のシステム権限を要求します。
     これらのデータは端末内でのみ処理され、外部サーバーや第三者へ送信・収集されることは一切ありません。</p>
-    <p class="en">The App requests the following permissions solely to display and organize your photos.
+    <p class="en">The App requests the following permissions solely to display and organize your photos and videos.
     All data is processed on-device only and is <strong>never</strong> transmitted to any external server or third party.</p>
     <ul>
       <li><strong>写真・画像へのアクセス権限</strong>（READ_MEDIA_IMAGES）：写真の読み込みと表示<br>
         <span class="en">READ_MEDIA_IMAGES — Read and display photos (Android 10+)</span></li>
-      <li><strong>外部ストレージ読み書き権限</strong>（READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE、Android 9以下）：Android 9以下の端末での写真の読み込みと移動操作<br>
-        <span class="en">READ/WRITE_EXTERNAL_STORAGE — Photo access on Android 9 (API 28) and below only</span></li>
-      <li><strong>写真の部分アクセス権限</strong>（READ_MEDIA_VISUAL_USER_SELECTED）：Android 14 以降の選択的アクセスへの対応<br>
-        <span class="en">READ_MEDIA_VISUAL_USER_SELECTED — Selective photo access on Android 14+</span></li>
+      <li><strong>動画へのアクセス権限</strong>（READ_MEDIA_VIDEO）：動画の読み込みと表示・再生<br>
+        <span class="en">READ_MEDIA_VIDEO — Read, display, and play videos (Android 13+)</span></li>
+      <li><strong>外部ストレージ読み書き権限</strong>（READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE、Android 9以下）：Android 9以下の端末での写真・動画の読み込みと移動操作<br>
+        <span class="en">READ/WRITE_EXTERNAL_STORAGE — Photo and video access on Android 9 (API 28) and below only</span></li>
+      <li><strong>写真・動画の部分アクセス権限</strong>（READ_MEDIA_VISUAL_USER_SELECTED）：Android 14 以降の選択的アクセスへの対応<br>
+        <span class="en">READ_MEDIA_VISUAL_USER_SELECTED — Selective photo/video access on Android 14+</span></li>
       <li><strong>メディア位置情報のアクセス権限</strong>（ACCESS_MEDIA_LOCATION）：写真に埋め込まれたGPS情報を保持したまま処理するため<br>
         <span class="en">ACCESS_MEDIA_LOCATION — Preserve embedded GPS metadata when moving photos</span></li>
       <li><strong>メディア管理権限</strong>（MANAGE_MEDIA）：仕分け操作のたびにシステム確認ダイアログが表示されることを防ぐ任意権限。ユーザーが設定画面から明示的に許可した場合にのみ有効<br>
-        <span class="en">MANAGE_MEDIA — Optional permission to suppress per-photo system confirmation dialogs; only activated when explicitly granted by the user in Settings</span></li>
+        <span class="en">MANAGE_MEDIA — Optional permission to suppress per-photo/video system confirmation dialogs; only activated when explicitly granted by the user in Settings</span></li>
     </ul>
+    <p>動画ファイルはアプリ内で再生プレビューが可能ですが、再生処理も端末内（オンデバイス）でのみ行われ、動画データが外部へ送信されることはありません。</p>
+    <p class="en">Videos can be previewed for playback within the App. All playback processing occurs on-device only, and video data is never transmitted externally.</p>
 
     <h3>【アプリ内設定データ】In-App Settings Data</h3>
     <p>フォルダ情報、連続仕分け設定、自動削除設定、チュートリアル進捗、Pro購入状態などの設定情報は、
@@ -182,6 +186,7 @@
       <li><strong>Room</strong> – ローカルデータベース（Apache 2.0）</li>
       <li><strong>DataStore</strong> – 設定データの永続化（Apache 2.0）</li>
       <li><strong>Reorderable</strong> – ドラッグ並び替えライブラリ（Apache 2.0）</li>
+      <li><strong>Media3 (ExoPlayer)</strong> – 動画再生ライブラリ（Apache 2.0）</li>
       <li><strong>Firebase Crashlytics / Analytics</strong> – クラッシュレポート・利用統計（Google）</li>
       <li><strong>Google Play Billing</strong> – アプリ内課金（Google）</li>
     </ul>
@@ -235,7 +240,7 @@
   </div>
 
   <div class="doc-footer">
-    <p>初版制定日：2026年5月6日　／　最終更新日：2026年6月8日</p>
+    <p>初版制定日：2026年5月6日　／　最終更新日：2026年6月19日</p>
     <p>屋号：BunDev</p>
   </div>
 </main>
